@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!--  add by derek 2012/11/30 -->
+	<!--  
+	  效果图可以参看 main_add 从中我们可以看出LinearLayout是有占位的布局,通过android:layout_gravity 等调节的只是显示的方式,类似
+	  与css,所以 button2 的位置是在那里..
+	
+	 
+	LinearLayout 主要通过layout_gravity 和 layout_weight 两个属性控制位置
+	 -->
+    
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+		     android:gravity="bottom">
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="右下按钮"
+				/>
+			
+			<Button android:layout_width="wrap_content"
+			    android:layout_gravity="top|left"
+				android:layout_height="wrap_content" android:text="右下按钮2"
+				/>
+
+		</LinearLayout>
+
+
+</LinearLayout>

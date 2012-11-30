@@ -2,12 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical" android:layout_width="fill_parent"
 	android:layout_height="fill_parent">
+	
+    <!-- 
+      此结构图通过android:layout_weight = 1 把 整个页面分成 四四方方的 四块
+    
+     -->
+    
+	<!--  上 -->
 	<LinearLayout android:orientation="horizontal"
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
 		android:layout_weight="1">
 		<LinearLayout android:orientation="vertical"
 			android:layout_width="fill_parent" android:layout_height="fill_parent"
-			android:layout_weight="1">
+			android:layout_weight="2">
 			<Button android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="左上按钮"
 				android:layout_gravity="left" />
@@ -21,12 +28,22 @@
 		</LinearLayout>
 
 	</LinearLayout>
+	
+	<!--  中 -->
+	
+	<!--  
+	 为什么在这里 把 android:layout_weight = 1 改成2 的时候,中间的就不显示了
+	为什么 这里的 android:layout_height 都是 equal fill_parent, 这样不就会造成都占据了吗 ？
+	 -->
+	
 	<LinearLayout android:orientation="vertical"
-		android:layout_width="fill_parent" android:layout_height="fill_parent"
-		android:layout_weight="1" android:gravity="center">
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_weight="2" android:gravity="center">
 		<Button android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="中心按钮" />
 	</LinearLayout>
+	
+	<!--  下  -->
 	<LinearLayout android:orientation="horizontal"
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
 		android:layout_weight="1">
@@ -36,11 +53,25 @@
 			<Button android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="左下按钮" />
 		</LinearLayout>
+		
+		<!--  
+		 这些地方用 android:gravity 的意思是 让 其中的Button 在此LinearLayout 的右下显示
+		而如果用android:layout_gravity 则是此 LinearLayout 本身靠右下, 从EditText 的字体设置可知 两者的区别
+		
+		android:gravity与android:layout_gravity。他们的区别在于：android:gravity用于设置View组件的对齐方式，而android:layout_gravity用于设置Container组件的对齐方式
+		
+		 -->
+		
 		<LinearLayout android:orientation="vertical"
 			android:layout_width="fill_parent" android:layout_height="fill_parent"
 			android:layout_weight="1" android:gravity="right|bottom">
 			<Button android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:text="右下按钮"
+				/>
+			
+			<Button android:layout_width="wrap_content"
+			    android:layout_gravity="top|left"
+				android:layout_height="wrap_content" android:text="右下按钮2"
 				/>
 
 		</LinearLayout>
