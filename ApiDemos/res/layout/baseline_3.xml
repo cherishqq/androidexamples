@@ -23,12 +23,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/baseline_3_explanation" />
-
+  
+    <!--  
+      add by derek
+      这里如果没有加 android:layout_weight="1.0" 则没法显示
+         android:layout_weight="1.0"
+      //       android:layout_height="0dip"
+       看来上面两者要一起配合,否则 当android:layout_height = 0 时，则不显示
+     -->
+    
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_weight="1.0"
-        android:layout_height="0dip">
+ 
+         android:layout_height="fill_parent"
+        >
 
         <TextView
             android:layout_width="wrap_content"

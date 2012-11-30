@@ -32,6 +32,7 @@
             android:text="@string/image_view_large_normal"/>
         <ImageView
             android:src="@drawable/sample_1"
+            android:id="@+id/imghh"
             android:adjustViewBounds="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

@@ -1,7 +1,7 @@
 package com.ringcentral.demo;
 
 import com.example.android.apis.R;
-import com.example.android.apis.view.Baseline1;
+import com.example.android.apis.view.Baseline_top;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -21,7 +21,7 @@ public class TransitionActivity extends Activity {
 			public void run() {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent();
-				intent.setClass(TransitionActivity.this, Baseline1.class);
+				intent.setClass(TransitionActivity.this, Baseline_top.class);
 				startActivity(intent);
 				overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 			}

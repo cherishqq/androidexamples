@@ -16,10 +16,14 @@
 
 package com.example.android.apis.view;
 
+import com.example.android.apis.R;
+
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
-import com.example.android.apis.R;
 
 
 /**
@@ -32,5 +36,18 @@ public class ImageView1 extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_view_1);
+        
+        /**
+         * derek
+         */
+        ImageView iv = (ImageView)findViewById(R.id.imghh);
+        iv.setOnClickListener(new View.OnClickListener() {			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Toast.makeText(ImageView1.this, "≤‚ ‘", Toast.LENGTH_SHORT).show();
+			}
+		});
+        
     }
 }

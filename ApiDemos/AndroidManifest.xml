@@ -937,28 +937,28 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.Baseline1" android:label="Views/Layouts/Baseline/1. Top">
+        <activity android:name=".view.Baseline_top" android:label="Views/Layouts/Baseline/1. Top">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.Baseline2" android:label="Views/Layouts/Baseline/2. Bottom">
+        <activity android:name=".view.Baseline_bottom" android:label="Views/Layouts/Baseline/2. Bottom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.Baseline3" android:label="Views/Layouts/Baseline/3. Center">
+        <activity android:name=".view.Baseline_center" android:label="Views/Layouts/Baseline/3. Center">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.Baseline4" android:label="Views/Layouts/Baseline/4. Everywhere">
+        <activity android:name=".view.Baseline_everywhere" android:label="Views/Layouts/Baseline/4. Everywhere">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />

@@ -46,6 +46,13 @@
         <!--
             EditText goes in between.
         -->
+        
+        <!-- 
+           add by derek
+           
+         	一个控件想占用 剩下的所有的空间，可通过 设置 android:layout_weight = 1.
+        
+         -->
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,6 +63,7 @@
 
         <!--
             The button goes at the right.
+            ImageButton 和 ImageView 的区别？  derek 
         -->
         <ImageButton
             style="@android:style/Widget.Button.Inset"

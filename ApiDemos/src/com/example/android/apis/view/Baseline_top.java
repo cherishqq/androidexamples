@@ -23,14 +23,13 @@ import android.os.Bundle;
 
 
 /**
- * Baseline alignement in LinearLayout with a center_vertical gravity. This sample shows that
- * using a center_vertical gravity disables baseline alignment.
+ * Baseline alignment in LinearLayout.
  */
-public class Baseline3 extends Activity {
+public class Baseline_top extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.baseline_3);
+        setContentView(R.layout.baseline_1);
     }
 }

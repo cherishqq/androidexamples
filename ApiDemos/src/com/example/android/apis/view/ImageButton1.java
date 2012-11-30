@@ -22,6 +22,13 @@ import android.os.Bundle;
 
 import com.example.android.apis.R;
 
+/**
+ *  
+ * @author Derek.pan
+ * 
+ * ImageButton 和 Button 没有直接继承关系,
+ * ImageButton 在被按下的时候,会自动变换风格
+ */
 
 public class ImageButton1 extends Activity {
     
@@ -29,5 +36,8 @@ public class ImageButton1 extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_button_1);
+        // to do 
+        // add style in many kinds
+        
     }
 }

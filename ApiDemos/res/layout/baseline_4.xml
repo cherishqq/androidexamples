@@ -14,6 +14,12 @@
      limitations under the License.
 -->
 
+<!-- 
+  add by derek
+  在次证明了 各 控件会占用 空间 
+  refer to Baseline_everywhere.png
+ -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
