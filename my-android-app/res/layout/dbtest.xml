@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/add_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add user"/>
+    
+   <Button
+        android:id="@+id/modify_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="modify user"/>
+   
+    <Button
+        android:id="@+id/delete_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete User"/>
+    
+    <Button
+        android:id="@+id/showUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show User"/>
+    
+   </LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, appActivity!</string>
+    <string name="app_name">my-android-app</string>
+    <string name="service">Service</string>
+    <string name="SharedPreferences">Preferences/1: SharedPreferences</string>
+    <string name="PreferencesActivity">Preferences/2: PreferencesActivity</string>
+    <string name="playMp3">media/1: playMp3</string>
+    <string name="Record">media/1: record</string>
+    <string name="app_updateVersion">app/1: updateVersion</string>
+    <string name="dbtest">db/1: dbtest</string>
+
+</resources>
