@@ -20,7 +20,7 @@ public class Main extends Activity implements OnItemSelectedListener,
 		ViewFactory
 { 
 	private Gallery gallery;
-	private ImageSwitcher imageSwitcher;
+//	private ImageSwitcher imageSwitcher;
 	private ImageAdapter imageAdapter;
 
 	private int[] resIds = new int[]
@@ -65,8 +65,8 @@ public class Main extends Activity implements OnItemSelectedListener,
 			ImageView imageView = new ImageView(mContext);
 
 			imageView.setImageResource(resIds[position % resIds.length]);
-			imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-			imageView.setLayoutParams(new Gallery.LayoutParams(136, 88));
+			imageView.setScaleType(ImageView.ScaleType.CENTER);
+			imageView.setLayoutParams(new Gallery.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
 			imageView.setBackgroundResource(mGalleryItemBackground);
 			return imageView;
 		}
@@ -76,7 +76,7 @@ public class Main extends Activity implements OnItemSelectedListener,
 	public void onItemSelected(AdapterView<?> parent, View view, int position,
 			long id)
 	{
-		imageSwitcher.setImageResource(resIds[position % resIds.length]);
+//		imageSwitcher.setImageResource(resIds[position % resIds.length]);
 
 	}
 
@@ -90,7 +90,7 @@ public class Main extends Activity implements OnItemSelectedListener,
 	{
 		ImageView imageView = new ImageView(this);
 		imageView.setBackgroundColor(0xFF000000);
-		imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+		imageView.setScaleType(ImageView.ScaleType.CENTER);
 		imageView.setLayoutParams(new ImageSwitcher.LayoutParams(
 				LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
 
@@ -106,13 +106,13 @@ public class Main extends Activity implements OnItemSelectedListener,
 		imageAdapter = new ImageAdapter(this);
 		gallery.setAdapter(imageAdapter);
 		gallery.setOnItemSelectedListener(this);
-		imageSwitcher = (ImageSwitcher) findViewById(R.id.imageswitcher);
+/*		imageSwitcher = (ImageSwitcher) findViewById(R.id.imageswitcher);
 		imageSwitcher.setFactory(this);
 
 		imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(this,
 				android.R.anim.fade_in));
 		imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this,
 				android.R.anim.fade_out));
-
+*/
 	}
 }

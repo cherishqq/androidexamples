@@ -70,5 +70,7 @@ public class Main extends Activity implements OnItemSelectedListener, OnItemClic
 		gridView.setOnItemClickListener(this);
 		imageView.setImageResource(resIds[0]);
 		
+		
+		
 	}
 }

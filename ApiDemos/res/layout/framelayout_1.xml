@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dip" >
+
+    <!--  
+        两个FrameLayout 并列时,只能看到 232.。
+        而在一个 FrameLayout 内部,如果两个TextView 并列,则看到的是 232 和  456 并列
+     
+     -->
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="232" />
+        
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="456" />
+    </FrameLayout>
+
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="456" />
+    </FrameLayout>
+</LinearLayout>

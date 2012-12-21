@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#eee" >
+
+    <TabHost
+        android:id="@+id/edit_item_tab_host"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <!-- 这里也可以换成其他的 布局文件吧...
+            	通过 android:layout_weight="1" 把 TabWidget 压到底部
+            	
+            	注意这里面的id, Framelayout 使用的是@android:id/tabcontent 和 @android:id/tabs 是有原因的
+             -->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 />
+
+            
+            <!--  为什么这里只需要一个呢? 
+             TabWidget 又相当于 TabSpec的 容器
+            -->
+            
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

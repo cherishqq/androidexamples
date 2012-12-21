@@ -712,6 +712,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".view.FrameLayout1"  android:label="Views/Layouts/FrameLayout1/1. FrameLayout">           
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
         <activity android:name=".view.LinearLayout1" android:label="Views/Layouts/LinearLayout/1. Vertical">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -804,21 +811,28 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.Tabs1" android:label="Views/Tabs/Content By Id">
+        <activity android:name=".view.TabsContentById" android:label="Views/Tabs/Content By Id">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.Tabs2" android:label="Views/Tabs/Content By Factory">
+        <activity android:name=".view.TabsContentByFactory" android:label="Views/Tabs/Content By Factory">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.Tabs3" android:label="Views/Tabs/Content By Intent">
+        <activity android:name=".view.TabsContentByIntent" android:label="Views/Tabs/Content By Intent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".view.TabsBottom" android:label="Views/Tabs/Tabs Bottom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
@@ -916,26 +930,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.Tabs1" android:label="Views/Tabs/Content By Id">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.SAMPLE_CODE"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".view.Tabs2" android:label="Views/Tabs/Content By Factory">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.SAMPLE_CODE"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".view.Tabs3" android:label="Views/Tabs/Content By Intent">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.SAMPLE_CODE"/>
-            </intent-filter>
-        </activity>
 
         <activity android:name=".view.Baseline_top" android:label="Views/Layouts/Baseline/1. Top">
             <intent-filter>

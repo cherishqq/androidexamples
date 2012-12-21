@@ -32,7 +32,7 @@ import android.view.View;
  * It also demonstrates using an icon on one of the tabs via {@link TabHost.TabSpec#setIndicator(CharSequence, android.graphics.drawable.Drawable)}
  *
  */
-public class Tabs2 extends TabActivity implements TabHost.TabContentFactory {
+public class TabsContentByFactory extends TabActivity implements TabHost.TabContentFactory {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

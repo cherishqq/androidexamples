@@ -16,12 +16,16 @@
 
 <!-- Demonstrates scrolling with a ScrollView. -->
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--  经测试,如果没有  ScrollView, 则下面的Button 是看不到的。。不能滚动。。还得在研究另外一种的是,通过代码动态添加 Widget,是否可以下拉-->
+
+<!-- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:scrollbars="none">
+    android:scrollbars="none"> -->
 
     <LinearLayout
+        
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/layout"
         android:orientation="vertical"
         android:layout_width="match_parent" android:layout_height="wrap_content">
@@ -85,6 +89,221 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/scroll_view_1_button_6"/>
+        
+                <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_1"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_4"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_6"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_6"/>
+        
+        
+                <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_4"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_6"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_6"/>
+        
+                <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_4"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_6"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_6"/>
+
+                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_4"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_text_6"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroll_view_1_button_6"/>
     </LinearLayout>
-</ScrollView>
+

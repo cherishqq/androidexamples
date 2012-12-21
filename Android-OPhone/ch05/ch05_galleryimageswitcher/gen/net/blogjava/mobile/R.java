@@ -11,29 +11,53 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
-        public static final int item1=0x7f020001;
-        public static final int item10=0x7f020002;
-        public static final int item11=0x7f020003;
-        public static final int item12=0x7f020004;
-        public static final int item13=0x7f020005;
-        public static final int item14=0x7f020006;
-        public static final int item15=0x7f020007;
-        public static final int item2=0x7f020008;
-        public static final int item3=0x7f020009;
-        public static final int item4=0x7f02000a;
-        public static final int item5=0x7f02000b;
-        public static final int item6=0x7f02000c;
-        public static final int item7=0x7f02000d;
-        public static final int item8=0x7f02000e;
-        public static final int item9=0x7f02000f;
+        public static final int d_tab_clockwise_photo_new=0x7f020000;
+        public static final int d_tab_zoomin_new=0x7f020001;
+        public static final int d_tab_zoomout_new=0x7f020002;
+        public static final int icon=0x7f020003;
+        public static final int imgcon_turn_r=0x7f020004;
+        public static final int imgcon_turn_r_click=0x7f020005;
+        public static final int imgcon_zoom_m=0x7f020006;
+        public static final int imgcon_zoom_m_click=0x7f020007;
+        public static final int imgcon_zoom_p=0x7f020008;
+        public static final int imgcon_zoom_p_click=0x7f020009;
+        public static final int imgnavbar_btn_bg=0x7f02000a;
+        public static final int imgnavbar_btn_click_bg=0x7f02000b;
+        public static final int item1=0x7f02000c;
+        public static final int item10=0x7f02000d;
+        public static final int item11=0x7f02000e;
+        public static final int item12=0x7f02000f;
+        public static final int item13=0x7f020010;
+        public static final int item14=0x7f020011;
+        public static final int item15=0x7f020012;
+        public static final int item2=0x7f020013;
+        public static final int item3=0x7f020014;
+        public static final int item4=0x7f020015;
+        public static final int item5=0x7f020016;
+        public static final int item6=0x7f020017;
+        public static final int item7=0x7f020018;
+        public static final int item8=0x7f020019;
+        public static final int item9=0x7f02001a;
+        public static final int navbar_btn_bg_pack=0x7f02001b;
+        public static final int toolbar_bg_new=0x7f02001c;
     }
     public static final class id {
-        public static final int gallery=0x7f050000;
-        public static final int imageswitcher=0x7f050001;
+        public static final int gallery=0x7f050006;
+        public static final int mainActionCommentButton=0x7f050002;
+        public static final int mainActionCommentText=0x7f050003;
+        public static final int mainActionLikeButton=0x7f050000;
+        public static final int mainActionLikeText=0x7f050001;
+        public static final int mainActionShareButton=0x7f050004;
+        public static final int mainActionShareText=0x7f050005;
+        public static final int view_photo_bottom_bar=0x7f05000b;
+        public static final int view_photo_tool_bar=0x7f050007;
+        public static final int wisebutton=0x7f050008;
+        public static final int zoominbutton=0x7f050009;
+        public static final int zoomoutbutton=0x7f05000a;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int feed_detail_main_action=0x7f030000;
+        public static final int main=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
@@ -42,11 +66,11 @@ public final class R {
     public static final class styleable {
         /** Attributes that can be used with a Gallery.
            <p>Includes the following attributes:</p>
-           <table border="2" width="85%" align="center" frame="hsides" rules="all" cellpadding="5">
+           <table>
            <colgroup align="left" />
            <colgroup align="left" />
-           <tr><th>Attribute<th>Summary</tr>
-           <tr><th><code>{@link #Gallery_android_galleryItemBackground net.blogjava.mobile:android_galleryItemBackground}</code><td></tr>
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Gallery_android_galleryItemBackground net.blogjava.mobile:android_galleryItemBackground}</code></td><td></td></tr>
            </table>
            @see #Gallery_android_galleryItemBackground
          */

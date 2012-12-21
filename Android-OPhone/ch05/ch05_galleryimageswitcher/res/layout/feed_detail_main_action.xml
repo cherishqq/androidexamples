@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="44.0dip"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/toolbar_bg_new"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/mainActionLikeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginLeft="14.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginTop="6.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/navbar_btn_bg_pack"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/mainActionLikeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赞"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+		android:id="@+id/mainActionCommentButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginRight="9.0dip"
+        android:layout_marginTop="6.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/navbar_btn_bg_pack"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/mainActionCommentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainActionShareButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="14.0dip"
+        android:layout_marginTop="6.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/navbar_btn_bg_pack"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/mainActionShareText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout>
