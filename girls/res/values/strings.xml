@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GirlsActivity!</string>
+    <string name="app_name">Girls</string>
+    <string name="app_description">Girls</string>
+    <string name="imageview_description">image</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete">Caches have been cleared</string>
+
+</resources>

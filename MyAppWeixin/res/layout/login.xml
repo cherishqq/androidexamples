@@ -90,4 +90,5 @@
 	        android:onClick="login_mainweixin"
 	        />
 	</RelativeLayout>
+	
 </RelativeLayout>
