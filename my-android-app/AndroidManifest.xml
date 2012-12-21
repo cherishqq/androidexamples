@@ -8,6 +8,7 @@
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 允许震动 -->
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -119,6 +120,8 @@
             </intent-filter>
         </activity>
 
+        
+        <!--  android:authorities, the same with  DBContentProvider.AUTHORITY  -->
         <provider
             android:name=".store.db.provider.DBContentProvider"
             android:authorities="com.derek.provider.dbprovider"

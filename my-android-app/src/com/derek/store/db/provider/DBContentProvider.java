@@ -32,7 +32,7 @@ public class DBContentProvider extends ContentProvider {
 	public static final String AUTHORITY = "com.derek.provider.dbprovider";
 
 	/**
-	 * 此处定义的是uri,不是表名,可以任意的,主要要对应
+	 * 
 	 */
 	/* URI paths names */
 	public static final String USER = "user";
