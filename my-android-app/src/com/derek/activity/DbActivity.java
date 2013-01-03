@@ -17,10 +17,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-
-
-
-
 public class DbActivity  extends Activity{
 	
 	private Button adduserButton;

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myapp_sortbyname_header_height"
+        android:background="@drawable/sortbyname_section_text_bg"
+        android:gravity="center_vertical"
+        style="@style/sortbyname_group_title_text_style"
+		android:paddingLeft="12dip"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/app_item_app"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:background="@drawable/app_list_selector_bg"
+        android:minHeight="66dip" >
+
+        <ImageView
+            android:id="@+id/appitem_icon"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dip"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/myapp_non_apps_img"
+            android:scaleType="fitXY" />
+
+        
+		<RelativeLayout  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/appitem_icon"
+            android:layout_marginRight="20dip">
+			    
+	        <TextView
+	            android:id="@+id/appname_text_view"
+	            style="@style/app_item_app_title_style"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true" />
+	
+	        
+		</RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

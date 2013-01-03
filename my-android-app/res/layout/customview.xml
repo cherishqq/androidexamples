@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <com.derek.ui.view.CalendarView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#eee"  
+    >
+    
+</com.derek.ui.view.CalendarView> -->
+
+<LinearLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#eee"   
+    >
+    
+    
+</LinearLayout>
+
+<!-- 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee" >
+
+    <RelativeLayout
+        android:id="@+id/section"
+        android:layout_width="20dip"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+             >
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/seven"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/eight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/ten"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/two"
+                android:text="10" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/monday"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/section" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="一" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tuesday"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/monday" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="二" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wednesday"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/tuesday" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="三" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thursday"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/wednesday" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="四" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/friday"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/thursday" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="五" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/saturday"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/friday" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="六" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sunday"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/saturday" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="日" />
+    </RelativeLayout>
+
+</RelativeLayout> -->

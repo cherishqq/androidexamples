@@ -76,7 +76,7 @@ public class UpdateAppActivity extends Activity {
     		ConnectivityManager cm = (ConnectivityManager)context
     				.getSystemService(Context.CONNECTIVITY_SERVICE);
     		NetworkInfo netWorkInfo = cm.getActiveNetworkInfo();
-    		return (netWorkInfo != null && netWorkInfo.isAvailable());//濡拷绁寸純鎴犵捕閺勵垰鎯侀崣顖滄暏
+    		return (netWorkInfo != null && netWorkInfo.isAvailable());//婵☆偓鎷风粊瀵哥磾閹寸姷鎹曢柡鍕靛灠閹線宕ｉ婊勬殢
     	}catch(Exception e){
     		e.printStackTrace();
     		return false;
@@ -89,7 +89,7 @@ public class UpdateAppActivity extends Activity {
 			int currentCode = CurrentVersion.getVerCode(this);
 			if(newVerCode > currentCode)
 			{//Current Version is old
-				//瀵懓鍤弴瀛樻煀閹绘劗銇氱�纭呯樈濡楋拷				showUpdateDialog();
+				//鐎殿喚鎳撻崵顓㈠即鐎涙ɑ鐓�柟缁樺姉閵囨氨锟界涵鍛▓婵℃鎷�			showUpdateDialog();
 			}
 		}
 	}
@@ -102,23 +102,23 @@ public class UpdateAppActivity extends Activity {
 		sb.append("VerCode:");
 		sb.append(CurrentVersion.getVerCode(this));
 		sb.append("\n");
-		sb.append("閸欐垹骞囬弬鎵閺堫剨绱�");
+		sb.append("闁告瑦鍨归獮鍥棘閹殿喖顣奸柡鍫墾缁憋拷");
 		sb.append(newVerName);
 		sb.append("NewVerCode:");
 		sb.append(newVerCode);
 		sb.append("\n");
 		sb.append("");
 		Dialog dialog = new AlertDialog.Builder(UpdateAppActivity.this)
-		.setTitle("鏉烆垯娆㈤弴瀛樻煀")
+		.setTitle("閺夌儐鍨▎銏ゅ即鐎涙ɑ鐓�")
 		.setMessage(sb.toString())
-		.setPositiveButton("閺囧瓨鏌�", new DialogInterface.OnClickListener() {
+		.setPositiveButton("闁哄洤鐡ㄩ弻锟�", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
-				showProgressBar();//閺囧瓨鏌婅ぐ鎾冲閻楀牊婀�
+				showProgressBar();//闁哄洤鐡ㄩ弻濠呫亹閹惧啿顤呴柣妤�墛濠�拷
 				}
 		})
-		.setNegativeButton("閺嗗倷绗夐弴瀛樻煀", new DialogInterface.OnClickListener() {
+		.setNegativeButton("闁哄棗鍊风粭澶愬即鐎涙ɑ鐓�", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
 			}
@@ -128,8 +128,8 @@ public class UpdateAppActivity extends Activity {
 	protected void showProgressBar() {
 		// TODO Auto-generated method stub
 		pBar = new ProgressDialog(UpdateAppActivity.this);
-		pBar.setTitle("濮濓絽婀稉瀣祰");
-		pBar.setMessage("鐠囬鈼㈤崥锟�.");
+		pBar.setTitle("婵繐绲藉﹢顏呯▔鐎ｎ厽绁�");
+		pBar.setMessage("閻犲洭顥熼埣銏ゅ触閿燂拷.");
 		pBar.setProgressStyle(ProgressDialog.STYLE_SPINNER);
 		downAppFile(downPath + appName);
 	}
@@ -200,11 +200,11 @@ public class UpdateAppActivity extends Activity {
 		handler.post(new Runnable(){
 			public void run(){
 				pBar.cancel();
-				//瀵懓鍤拃锕�啞濡楋拷閹绘劗銇氶弰顖氭儊鐎瑰顥栭弬鎵畱閻楀牊婀�				
+				//鐎殿喚鎳撻崵顓犳媰閿曪拷鍟炴俊妤嬫嫹闁圭粯鍔楅妵姘跺及椤栨碍鍎婇悗鐟邦樋椤ユ牠寮幍顔界暠闁绘鐗婂﹢锟�			
 				Dialog installDialog = new AlertDialog.Builder(UpdateAppActivity.this)
-				.setTitle("娑撳娴囩�灞惧灇")
-				.setMessage("閺勵垰鎯佺�澶庮棖閺傛壆娈戞惔鏃傛暏")
-				.setPositiveButton("绾喖鐣�", new DialogInterface.OnClickListener(){
+				.setTitle("濞戞挸顑堝ù鍥╋拷鐏炴儳鐏�")
+				.setMessage("闁哄嫷鍨伴幆浣猴拷婢跺寒妫栭柡鍌涘濞堟垶鎯旈弮鍌涙殢")
+				.setPositiveButton("取消", new DialogInterface.OnClickListener(){
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
@@ -212,7 +212,7 @@ public class UpdateAppActivity extends Activity {
 						finish();
 						}
 					})
-					.setNegativeButton("閸欐牗绉�", new DialogInterface.OnClickListener() {
+					.setNegativeButton("闁告瑦鐗楃粔锟�", new DialogInterface.OnClickListener() {
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							// TODO Auto-generated method stub
@@ -224,7 +224,7 @@ public class UpdateAppActivity extends Activity {
 				}
 			});
 		}
-	//鐎瑰顥栭弬鎵畱鎼存梻鏁�	
+	//閻庣懓顦块ˉ鏍棘閹殿喗鐣遍幖瀛樻⒒閺侊拷	
 	protected void installNewApk() 
 	{
 		// TODO Auto-generated method stub

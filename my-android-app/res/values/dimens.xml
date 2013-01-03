@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <dimen name="apppopwin_margintop_height">84dip</dimen>
+    <!-- 我的应用列表中tab的高度 -->
+    <dimen name="myapp_tab_height">37dip</dimen>
+    <!-- titlebar的高度 -->
+    <dimen name="titlebar_height">44dip</dimen>
+    <dimen name="myapp_sortbyname_header_height">25dip</dimen>
+    <dimen name="sorttype_selection_width">135dip</dimen>
+    <dimen name="apppopwin_item_width">72dip</dimen>
+   
+</resources>

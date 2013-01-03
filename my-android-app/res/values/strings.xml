@@ -10,5 +10,7 @@
     <string name="Record">media/1: record</string>
     <string name="app_updateVersion">app/1: updateVersion</string>
     <string name="dbtest">db/1: dbtest</string>
+    <string name="customview">view/1: customview</string>
+    <string name="ListViewHeader">view/2: ListViewHeader</string>
 
 </resources>

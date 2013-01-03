@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="sortbyname_sectionindexer_text_style">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    	<style name="sortbyname_group_title_text_style" >
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">#45484d</item>
+	</style>
+
+    		<style name="app_item_app_title_style" >
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">#45484d</item>
+	</style>
+    	
+</resources>

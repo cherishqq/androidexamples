@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="@dimen/myapp_sortbyname_header_height" 
+	android:background="#20000000">
+	
+	<TextView 
+		android:id="@+id/header_text"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:gravity="center_vertical"
+		style="@style/sortbyname_group_title_text_style"
+		android:background="@drawable/sortbyname_section_text_bg"
+		android:paddingLeft="12dip"/>
+</RelativeLayout>

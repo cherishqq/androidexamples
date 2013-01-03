@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/localappframe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <com.derek.ui.view.PinnedHeaderListView
+        android:id="@+id/section_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.derek.ui.view.SectionIndexerView
+        android:id="@+id/section_indexer_view"
+        android:layout_width="70dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:layout_marginBottom="4dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="25dip"
+        android:textSize="12.0sp" />
+
+   <TextView
+        android:id="@+id/section_text"
+        style="@style/sortbyname_sectionindexer_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/section_text_bg"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</merge>
