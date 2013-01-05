@@ -114,7 +114,10 @@
 
         <activity
             android:name=".activity.DbActivity"
-            android:label="@string/dbtest" >
+            android:label="@string/dbtest"
+            android:theme="@android:style/Theme.Panel"
+            android:screenOrientation="portrait"
+             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.derek"/>

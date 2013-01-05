@@ -22,7 +22,8 @@ import com.derek.util.StringUtils;
 
 
 /** 
- * æ¼”ç¤ºè‡ªå®šä¹‰View
+ * ×Ô¶¨ÒåView
+ * 
  * @author Derek.pan
  *
  */
