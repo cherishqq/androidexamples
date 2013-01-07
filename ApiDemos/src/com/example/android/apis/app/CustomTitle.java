@@ -60,9 +60,14 @@ public class CustomTitle extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        /**
+         * 其实可以自定义很多,这时候 custom_title_1 的控件一样可以取到
+         */
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.custom_title);
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.custom_title_1);
+        
+        
         
         final TextView leftText = (TextView) findViewById(R.id.left_text);
         final TextView rightText = (TextView) findViewById(R.id.right_text);

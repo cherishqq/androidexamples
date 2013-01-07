@@ -43,6 +43,12 @@ public class CustomDialogActivity extends Activity {
         // See assets/res/any/layout/dialog_activity.xml for this
         // view layout definition, which is being set here as
         // the content of our screen.
+        
+        /**
+         * 这个哪里是Dialog啊,只是一个TextView,居中展示了一下而已 啊
+         * 红色的背景是怎么来的？？
+         */
+        
         setContentView(R.layout.custom_dialog_activity);
     }
 }
