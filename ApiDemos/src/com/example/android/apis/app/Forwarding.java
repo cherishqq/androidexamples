@@ -78,7 +78,7 @@ public class Forwarding extends Activity
             Intent intent = new Intent();
             intent.setClass(Forwarding.this, ForwardTarget.class);
             startActivity(intent);
-            finish();
+//            finish();
         }
     };
 }

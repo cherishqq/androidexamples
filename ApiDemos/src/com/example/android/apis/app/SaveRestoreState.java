@@ -59,6 +59,13 @@ import android.widget.TextView;
         </tr>
 </table>
  */
+
+/**
+ * 是在旋转的时候,不会变
+ * http://dev.wo.com.cn/docportal/doc_queryMdocDetail.action?mdoc.docindex=6426
+ * @author Derek.pan
+ *
+ */
 public class SaveRestoreState extends Activity
 {
     /**
@@ -80,6 +87,7 @@ public class SaveRestoreState extends Activity
         // Set message to be appropriate for this screen.
         ((TextView)findViewById(R.id.msg)).setText(R.string.save_restore_msg);
     }
+    
 
     /**
      * Retrieve the text that is currently in the "saved" editor.

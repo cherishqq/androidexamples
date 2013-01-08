@@ -69,7 +69,7 @@
 
         <activity android:name=".app.DialogActivity"
                 android:label="@string/activity_dialog"
-                android:theme="@android:style/Theme.Dialog">
+                android:theme="@android:style/Theme.Panel">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -155,7 +155,9 @@
         <activity android:name=".app.SendResult">
         </activity>
 
-        <activity android:name=".app.Forwarding" android:label="@string/activity_forwarding">
+        <activity android:name=".app.Forwarding" 
+            android:launchMode="singleTask"
+            android:label="@string/activity_forwarding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -195,9 +197,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".app.ReorderTwo" />
-        <activity android:name=".app.ReorderThree" />
-        <activity android:name=".app.ReorderFour" />
+        <activity android:name=".app.ReorderTwo"
+            android:launchMode="singleTask"
+             />
+        <activity android:name=".app.ReorderThree" 
+      
+            />
+        <activity android:name=".app.ReorderFour"
+     
+             />
 
         <activity android:name=".app.SetWallpaperActivity"
                   android:label="@string/activity_setwallpaper">

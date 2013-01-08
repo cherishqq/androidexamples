@@ -76,7 +76,7 @@ public class NotificationDisplay extends Activity implements View.OnClickListene
         // since the notification display activity is run as a separate task.
         Intent intent = new Intent(this, StatusBarNotifications.class);
         intent.setAction(Intent.ACTION_MAIN);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+  //      intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         
         // We're done.

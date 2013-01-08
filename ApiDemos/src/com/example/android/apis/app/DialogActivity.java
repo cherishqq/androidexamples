@@ -28,7 +28,17 @@ import com.example.android.apis.R;
  * <h3>Dialog Activity</h3>
  * 
  * <p>This demonstrates the how to write an activity that looks like 
+ * 
+ * 
  * a pop-up dialog.</p>
+ */
+
+/**
+ * 问题:这个要怎么跳转,才会出现 弹出式的,而不是直接变成一个页面直接展示呢？
+ * 
+ *  android:theme="@android:style/Theme.Dialog" 是在配置文件里面配置的。。这个竟然给忘了。。
+ * @author Derek.pan
+ *
  */
 public class DialogActivity extends Activity {
     /**
@@ -41,13 +51,17 @@ public class DialogActivity extends Activity {
         // Be sure to call the super class.
         super.onCreate(savedInstanceState);
         
+        /**
+         * 去掉这句的话,会报错
+         */
         requestWindowFeature(Window.FEATURE_LEFT_ICON);
         
         // See assets/res/any/layout/dialog_activity.xml for this
         // view layout definition, which is being set here as
         // the content of our screen.
-        setContentView(R.layout.dialog_activity);
-        
+//        setContentView(R.layout.dialog_activity);
+        setContentView(R.layout.hello_world);
+//   
         getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON, 
                 android.R.drawable.ic_dialog_alert);
     }

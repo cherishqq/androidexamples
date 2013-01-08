@@ -21,14 +21,19 @@ import com.example.android.apis.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class ReorderTwo extends Activity {
+	
+	private String tag = "ReorderTwo";
+	
     @Override
     protected void onCreate(Bundle savedState) {
         super.onCreate(savedState);
+        Log.d(tag, "ReorderTwo onCreate");
         
         setContentView(R.layout.reorder_two);
         

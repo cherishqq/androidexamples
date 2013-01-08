@@ -22,6 +22,7 @@ import com.example.android.apis.R;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Window;
 
 
 /**
@@ -35,7 +36,14 @@ public class ForwardTarget extends Activity
     {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.forward_target);
+        requestWindowFeature(Window.FEATURE_LEFT_ICON);
+        
+//        setContentView(R.layout.forward_target);
+        setContentView(R.layout.hello_world);
+        
+
+        getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON, 
+                android.R.drawable.ic_dialog_alert);
     }
 }
 
