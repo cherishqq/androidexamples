@@ -59,6 +59,26 @@ public final class DataStore {
 				+ " INTEGER DEFAULT  0"
 
 				+ ");";
+		
+		private static final String INSERT_DATA_1 = "insert into " + TABLE_NAME + "("
+					+ USER_NAME + ","
+					+ USER_ID + ","
+					+ USER_PASSWORD + ")" 
+					+ " values('derek','1','123321'); " ;
+		
+		private static final String INSERT_DATA_2 = "insert into " + TABLE_NAME + "("
+				+ USER_NAME + ","
+				+ USER_ID + ","
+				+ USER_PASSWORD + ")" 
+				+ " values('nick','2','123321'); " ;
+		
+		private static final String INSERT_DATA_3 = "insert into " + TABLE_NAME + "("
+				+ USER_NAME + ","
+				+ USER_ID + ","
+				+ USER_PASSWORD + ")" 
+				+ " values('lily','3','123321'); " ;
+		
+		
 
 		@Override
 		String getName() {
@@ -68,6 +88,21 @@ public final class DataStore {
 		@Override
 		void onCreate(SQLiteDatabase db) {
 			db.execSQL(CREATE_TABLE_STMT);
+/*			db.execSQL(INSERT_DATA_1);
+			db.execSQL(INSERT_DATA_2);
+			db.execSQL(INSERT_DATA_3);*/
+		}
+		
+		@Override
+		public void initTableContent(SQLiteDatabase db) {
+			
+//			db.beginTransaction();
+			db.execSQL(INSERT_DATA_1);
+			db.execSQL(INSERT_DATA_2);
+			db.execSQL(INSERT_DATA_3);
+/*			db.setTransactionSuccessful();
+			db.endTransaction();*/
+			
 		}
 
 	}

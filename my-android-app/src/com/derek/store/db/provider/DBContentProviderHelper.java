@@ -1,5 +1,6 @@
 package com.derek.store.db.provider;
 
+import com.derek.model.User;
 import com.derek.store.log.EngLog;
 
 import android.content.ContentValues;
@@ -13,11 +14,16 @@ public class DBContentProviderHelper {
     private static final String TAG = "DBContentProviderHelper";
     
     
-    public static void addUser(Context context){
+    public static void addUser(Context context,User u){
         ContentValues values = new ContentValues();
-        values.put(DataStore.UserTable.USER_NAME, "derek");
+/*        values.put(DataStore.UserTable.USER_NAME, "derek");
         values.put(DataStore.RCMColumns.USER_ID,1);
-        values.put(DataStore.UserTable.USER_PASSWORD, "derek");
+        values.put(DataStore.UserTable.USER_PASSWORD, "derek");*/
+        
+        values.put(DataStore.UserTable.USER_NAME, u.getName());
+        values.put(DataStore.RCMColumns.USER_ID, 1);
+        values.put(DataStore.UserTable.USER_PASSWORD, u.getPassword());
+        
         context.getContentResolver().insert(UriHelper.getUri(DBContentProvider.USER), values);
   //  	insertSingleValue(context,DBContentProvider.USER,DataStore.UserTable.USER_NAME,"derek");
     }

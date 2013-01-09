@@ -12,7 +12,6 @@ import org.apache.http.HttpMessage;
 import com.derek.common.Constants;
 import com.derek.model.BasePOJO;
 import com.derek.model.RestResult;
-import com.derek.rest.request.T;
 
 import android.util.Log;
 
@@ -32,9 +31,9 @@ public abstract class RestRequest <T extends BasePOJO> {
 	
 	public T getResult(){
 		if(result != null){
-			return result;
+			return null;
 		}
-		
+		return null;
 	}
 	
 	

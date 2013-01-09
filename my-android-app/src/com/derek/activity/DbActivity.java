@@ -1,6 +1,7 @@
 package com.derek.activity;
 
 import com.derek.R;
+import com.derek.model.User;
 import com.derek.store.db.provider.DBContentProvider;
 import com.derek.store.db.provider.DBContentProviderHelper;
 import com.derek.store.db.provider.DataStore;
@@ -39,7 +40,7 @@ public class DbActivity  extends Activity{
 			
 			@Override
 			public void onClick(View v) {
-				DBContentProviderHelper.addUser(DbActivity.this);
+				DBContentProviderHelper.addUser(DbActivity.this,new User());
 			}
 		});
 		
@@ -74,7 +75,6 @@ public class DbActivity  extends Activity{
 															new String []{DataStore.UserTable._ID,
 																DataStore.UserTable.USER_NAME,
 																	DataStore.UserTable.USER_PASSWORD},
-					
 																	null, null,null);
 				String tip = "";
 				if(cursor == null){

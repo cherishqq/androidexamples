@@ -36,5 +36,14 @@ public abstract class BaseListAdapter<T>  extends BaseAdapter {
     	lists = l;
     	notifyDataSetInvalidated();
     }
+    
+    public void registerDataSetObserver(android.database.DataSetObserver observer) {};
+    
+    /**
+     * 针对文件等其他的变化做的操作
+     */
+    public void registerDataObserver(){
+    	
+    }
 	
 }

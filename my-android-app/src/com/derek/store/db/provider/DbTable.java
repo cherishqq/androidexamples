@@ -65,8 +65,6 @@ abstract class DbTable {
 		initTableContent(db);
 	}
 
-	void initTableContent(SQLiteDatabase db) {
-
-	}
+	public abstract void initTableContent(SQLiteDatabase db);
 
 }

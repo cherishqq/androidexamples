@@ -141,6 +141,30 @@
 				<category android:name="android.intent.category.derek"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.adapter.SimpleCursorAdapterDemo"
+            android:label="@string/SimpleCursorAdapter" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.derek"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.adapter.CursorAdapterDemo"
+            android:label="@string/CursorAdapterDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.derek"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.adapter.ResourceCursorAdapterDemo"
+            android:label="@string/ResourceCursorAdapterDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.derek"/>
+            </intent-filter>
+        </activity>
 
         
         <!--  android:authorities, the same with  DBContentProvider.AUTHORITY  -->

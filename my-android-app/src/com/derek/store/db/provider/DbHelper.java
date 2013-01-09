@@ -47,7 +47,9 @@ public  class DbHelper extends SQLiteOpenHelper {
 		try {
 			db.beginTransaction();
 			while (iterator.hasNext()) {
-				iterator.next().onCreate(db);
+				DbTable table = iterator.next();
+				table.onCreate(db);
+				table.initTableContent(db);
 			}
 			db.setTransactionSuccessful();
 		} catch (Throwable e) {
@@ -123,6 +125,7 @@ public  class DbHelper extends SQLiteOpenHelper {
 							temp_name);
 				} else {
 					table_descriptor.onCreate(db);
+//					table_descriptor.initTableContent(db);
 				}
 			}
 			db.setTransactionSuccessful();

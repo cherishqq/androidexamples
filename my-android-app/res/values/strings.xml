@@ -12,5 +12,8 @@
     <string name="dbtest">db/1: dbtest</string>
     <string name="customview">view/1: customview</string>
     <string name="ListViewHeader">view/2: ListViewHeader</string>
+    <string name="SimpleCursorAdapter">adapter/1: SimpleCursorAdapter</string>
+    <string name="CursorAdapterDemo">adapter/2: CursorAdapterDemo</string>
+    <string name="ResourceCursorAdapterDemo">adapter/3: ResourceCursorAdapterDemo</string>
 
 </resources>

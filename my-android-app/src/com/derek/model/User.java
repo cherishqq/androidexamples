@@ -13,9 +13,33 @@ public class User extends BasePOJO<User>{
 	private int sex;
 	private String photoUri;
 	private Gender mGender;
+	private String password;
 	
 	
-	
+
+	/**
+	 * 
+	 */
+	public User() {
+		super();
+	}
+
+
+
+
+	public String getPassword() {
+		return password;
+	}
+
+
+
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
+
 
 	public String getmEmail() {
 		return mEmail;
