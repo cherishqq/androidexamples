@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <EditText
+        android:id="@+id/search_bar_query"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_search_input"
+        android:maxLength="25"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp" 
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:textColorHint="@color/edittextcolor_noinput" />
+
+    <ImageView
+        android:id="@+id/search_bar_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_bar_et"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:src="@drawable/ic_search_bar_search_btn" />
+
+    <!-- 
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_bar_close_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignRight="@+id/search_bar_et"
+        android:paddingRight="5dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone" 
+        >
+
+        <ImageButton
+            android:id="@+id/search_bar_close_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/search_bar_close_btn" />
+        
+    </FrameLayout>
+     -->
+
+    <ImageView
+        android:id="@+id/search_bar_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/search_bar_et"
+        android:paddingRight="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/search_bar_close_btn"
+        android:visibility="gone" />
+</RelativeLayout>

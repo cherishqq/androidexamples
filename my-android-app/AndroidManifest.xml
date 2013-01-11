@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.derek"
+    package="com.android"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -53,7 +53,7 @@
         </activity>
 
         <service
-            android:name=".service.MyService"
+           android:name=".service.MyService"
             android:enabled="true" />
 
         <activity
@@ -92,7 +92,7 @@
             </intent-filter>
         </activity>
 
-        <!-- updateVersion -->
+        <!-- updateVersion 
         <activity
             android:name=".app.updateversion.UpdateAppActivity"
             android:label="@string/app_updateVersion" >
@@ -101,8 +101,7 @@
              <category android:name="android.intent.category.derek"/>
             </intent-filter>
         </activity>
-
-        <receiver android:name=".app.updateversion.ReplaceBroadcastReceiver" >
+		<receiver android:name=".app.updateversion.ReplaceBroadcastReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED" />
                 <action android:name="android.intent.action.PACKAGE_REPLACED" />
@@ -110,7 +109,7 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-        <!--  -->
+          -->
 
         <activity
             android:name=".activity.DbActivity"
@@ -165,10 +164,17 @@
 				<category android:name="android.intent.category.derek"/>
             </intent-filter>
         </activity>
+            <activity
+              android:name=".activity.listview.SearchListViewActivity"
+            android:label="@string/SearchListViewActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.derek"/>
+            </intent-filter>
+        </activity>
 
         
-        <!--  android:authorities, the same with  DBContentProvider.AUTHORITY  -->
-        <provider
+ <provider
             android:name=".store.db.provider.DBContentProvider"
             android:authorities="com.derek.provider.dbprovider"
             android:exported="false" />

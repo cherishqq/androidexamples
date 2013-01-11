@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+          android:id="@+id/search"
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <EditText
+        android:id="@+id/searchQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入搜索内容"
+        android:text="请输入搜索内容"
+        />
+        
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:persistentDrawingCache="animation|scrolling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"      
+        >
+        
+           <ProgressBar
+        		android:id="@+id/progressBar1"
+        		style="?android:attr/progressBarStyleLarge"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        
+        		android:layout_gravity="center_horizontal"
+        		
+         	/>
+      
+        	<TextView
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="正在加载"
+       			android:layout_marginTop="10dp"
+        		android:textColor="#fff"
+        		android:textSize="20sp"
+        />
+          
+        
+    </FrameLayout>
+    
+    
+
+</LinearLayout>

@@ -15,5 +15,6 @@
     <string name="SimpleCursorAdapter">adapter/1: SimpleCursorAdapter</string>
     <string name="CursorAdapterDemo">adapter/2: CursorAdapterDemo</string>
     <string name="ResourceCursorAdapterDemo">adapter/3: ResourceCursorAdapterDemo</string>
+    <string name="SearchListViewActivity">UI/1: SearchBar</string>
 
 </resources>
