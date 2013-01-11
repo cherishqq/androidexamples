@@ -78,10 +78,6 @@ public class CursorAdapterDemo extends ListActivity{
 				
 				// 这样子有在新的线程中执行..
 			// 	new addUserThread().start();
-				
-				
-				
-				
 /*				handler.post(new Runnable(){
 					@Override
 					public void run() {
@@ -137,11 +133,6 @@ public class CursorAdapterDemo extends ListActivity{
 			u.setmEmail("haijinme@qq.com");
 			u.setPhotoUri("http://www.baidu.com");
 			u.setPassword("123321");
-			try {
-				Thread.sleep(3000l);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
 			DBContentProviderHelper.addUser(CursorAdapterDemo.this,u);	
 			
 			Message msg = new Message();
@@ -187,8 +178,7 @@ public class CursorAdapterDemo extends ListActivity{
 
 		@Override
 		public void bindView(View view, Context context, Cursor cursor) {
-			
-			
+					
 			LinearLayout layout = (LinearLayout)view;
 			TextView nameView = (TextView)layout.findViewById(R.id.name);
 			TextView psdView = (TextView)layout.findViewById(R.id.password);

@@ -47,6 +47,15 @@ public class SearchListViewActivity  extends ListActivity{
 		 
 		 setListAdapter(cursorAdapter);
 		 searchBar.setCursorAdapter(cursorAdapter);
+		 searchBar.setFilterQuery(new SearchBar.FilterQuery(){
+
+			@Override
+			public void setQueryCondition() {
+				
+			}
+			 
+		 });
+		 
 		 
 		
 		searchTask = new SearchTask();

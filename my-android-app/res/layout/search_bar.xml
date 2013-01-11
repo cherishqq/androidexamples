@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/search_bar"
     android:layout_width="fill_parent"
@@ -28,27 +27,6 @@
         android:paddingLeft="5dp"
         android:src="@drawable/ic_search_bar_search_btn" />
 
-    <!-- 
-    <FrameLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/search_bar_close_iv"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" 
-        android:layout_alignRight="@+id/search_bar_et"
-        android:paddingRight="5dp"
-        android:layout_centerVertical="true"
-        android:visibility="gone" 
-        >
-
-        <ImageButton
-            android:id="@+id/search_bar_close_im"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:src="@drawable/search_bar_close_btn" />
-        
-    </FrameLayout>
-     -->
 
     <ImageView
         android:id="@+id/search_bar_close_iv"

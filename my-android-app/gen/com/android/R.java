@@ -9,6 +9,14 @@ package com.android;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int searchbartip=0x7f010000;
     }
     public static final class color {
         public static final int edittextcolor_noinput=0x7f060000;
@@ -89,29 +97,31 @@ public final class R {
         public static final int showUser=0x7f0a0007;
     }
     public static final class layout {
-        public static final int cursoradapter=0x7f030000;
-        public static final int cursoradapter_item=0x7f030001;
-        public static final int customview=0x7f030002;
-        public static final int dbtest=0x7f030003;
-        public static final int download=0x7f030004;
-        public static final int friend_list_item=0x7f030005;
-        public static final int list_section=0x7f030006;
-        public static final int list_view_header=0x7f030007;
-        public static final int listitem=0x7f030008;
-        public static final int main=0x7f030009;
-        public static final int playmp3=0x7f03000a;
-        public static final int record=0x7f03000b;
-        public static final int search_bar=0x7f03000c;
-        public static final int serviceactivity=0x7f03000d;
-        public static final int sharedpreferencesactivity=0x7f03000e;
-        public static final int simplecursoradapter=0x7f03000f;
-        public static final int updateversion=0x7f030010;
-        public static final int usersearch=0x7f030011;
+        public static final int contentresolver=0x7f030000;
+        public static final int cursoradapter=0x7f030001;
+        public static final int cursoradapter_item=0x7f030002;
+        public static final int customview=0x7f030003;
+        public static final int dbtest=0x7f030004;
+        public static final int download=0x7f030005;
+        public static final int friend_list_item=0x7f030006;
+        public static final int list_section=0x7f030007;
+        public static final int list_view_header=0x7f030008;
+        public static final int listitem=0x7f030009;
+        public static final int main=0x7f03000a;
+        public static final int playmp3=0x7f03000b;
+        public static final int record=0x7f03000c;
+        public static final int search_bar=0x7f03000d;
+        public static final int serviceactivity=0x7f03000e;
+        public static final int sharedpreferencesactivity=0x7f03000f;
+        public static final int simplecursoradapter=0x7f030010;
+        public static final int updateversion=0x7f030011;
+        public static final int usersearch=0x7f030012;
     }
     public static final class raw {
         public static final int music=0x7f050000;
     }
     public static final class string {
+        public static final int ContentResolverActivity=0x7f08000f;
         public static final int CursorAdapterDemo=0x7f08000c;
         public static final int ListViewHeader=0x7f08000a;
         public static final int PreferencesActivity=0x7f080004;
@@ -136,4 +146,33 @@ public final class R {
     public static final class xml {
         public static final int preference_setting=0x7f040000;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a searchbar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #searchbar_searchbartip com.android:searchbartip}</code></td><td></td></tr>
+           </table>
+           @see #searchbar_searchbartip
+         */
+        public static final int[] searchbar = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.android.R.attr#searchbartip}
+          attribute's value can be found in the {@link #searchbar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:searchbartip
+        */
+        public static final int searchbar_searchbartip = 0;
+    };
 }

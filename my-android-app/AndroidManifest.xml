@@ -164,9 +164,17 @@
 				<category android:name="android.intent.category.derek"/>
             </intent-filter>
         </activity>
-            <activity
+         <activity
               android:name=".activity.listview.SearchListViewActivity"
             android:label="@string/SearchListViewActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.derek"/>
+            </intent-filter>
+        </activity>
+         <activity
+              android:name=".activity.content.ContentResolverActivity"
+            android:label="@string/ContentResolverActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.derek"/>

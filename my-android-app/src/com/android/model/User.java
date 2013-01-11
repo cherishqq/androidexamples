@@ -15,7 +15,6 @@ public class User extends BasePOJO<User>{
 	private Gender mGender;
 	private String password;
 	
-	
 
 	/**
 	 * 
