@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view;
+package com.example.android.apis.view.linearlayout;
 
 // Need the following import to get access to the app resources, since this
 // class is in a sub-package.
@@ -25,14 +25,14 @@ import android.os.Bundle;
 
 
 /**
- * Demonstrates using match_parent within a linear layout whose size is not fixed.
+ * Demonstrates a horizontal linear layout with equally sized columns.
  *
  */
-public class LinearLayout7 extends Activity {
+public class LinearLayout4 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_layout_7);
+        setContentView(R.layout.linear_layout_4);
     }
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007 The Android Open Source Project
+ * Copyright (C) 2008 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view;
+package com.example.android.apis.view.linearlayout;
 
 // Need the following import to get access to the app resources, since this
 // class is in a sub-package.
@@ -25,14 +25,13 @@ import android.os.Bundle;
 
 
 /**
- * Demonstrates building a simple form with nested LinearLayouts.
- *
+ * Demonstrates the use of LinearLayout backgrounds to group labels,
+ * EditTexts, and buttons,
  */
-public class LinearLayout5 extends Activity {
-
+public class LinearLayout10 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_layout_5);
+        setContentView(R.layout.linear_layout_10);
     }
 }

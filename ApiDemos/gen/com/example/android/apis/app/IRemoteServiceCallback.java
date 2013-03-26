@@ -28,13 +28,13 @@ public static com.example.android.apis.app.IRemoteServiceCallback asInterface(an
 if ((obj==null)) {
 return null;
 }
-android.os.IInterface iin = (android.os.IInterface)obj.queryLocalInterface(DESCRIPTOR);
+android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
 if (((iin!=null)&&(iin instanceof com.example.android.apis.app.IRemoteServiceCallback))) {
 return ((com.example.android.apis.app.IRemoteServiceCallback)iin);
 }
 return new com.example.android.apis.app.IRemoteServiceCallback.Stub.Proxy(obj);
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return this;
 }
@@ -65,7 +65,7 @@ Proxy(android.os.IBinder remote)
 {
 mRemote = remote;
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return mRemote;
 }
@@ -76,7 +76,7 @@ return DESCRIPTOR;
 /**
      * Called when the service has a new value for you.
      */
-public void valueChanged(int value) throws android.os.RemoteException
+@Override public void valueChanged(int value) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 try {

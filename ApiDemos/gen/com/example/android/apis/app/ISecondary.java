@@ -28,13 +28,13 @@ public static com.example.android.apis.app.ISecondary asInterface(android.os.IBi
 if ((obj==null)) {
 return null;
 }
-android.os.IInterface iin = (android.os.IInterface)obj.queryLocalInterface(DESCRIPTOR);
+android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
 if (((iin!=null)&&(iin instanceof com.example.android.apis.app.ISecondary))) {
 return ((com.example.android.apis.app.ISecondary)iin);
 }
 return new com.example.android.apis.app.ISecondary.Stub.Proxy(obj);
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return this;
 }
@@ -84,7 +84,7 @@ Proxy(android.os.IBinder remote)
 {
 mRemote = remote;
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return mRemote;
 }
@@ -95,7 +95,7 @@ return DESCRIPTOR;
 /**
      * Request the PID of this service, to do evil things with it.
      */
-public int getPid() throws android.os.RemoteException
+@Override public int getPid() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -116,7 +116,7 @@ return _result;
      * This demonstrates the basic types that you can use as parameters
      * and return values in AIDL.
      */
-public void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat, double aDouble, java.lang.String aString) throws android.os.RemoteException
+@Override public void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat, double aDouble, java.lang.String aString) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();

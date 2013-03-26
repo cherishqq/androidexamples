@@ -14,25 +14,29 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view;
+package com.example.android.apis.view.linearlayout;
 
-// Need the following import to get access to the app resources, since this
-// class is in a sub-package.
 import com.example.android.apis.R;
+import com.example.android.apis.view.AutoComplete1;
 
 import android.app.Activity;
 import android.os.Bundle;
-
+import android.widget.ListView;
+import android.widget.ArrayAdapter;
 
 /**
- * Demonstrates using the uniformSize attribute
- *
+ * Demonstrates how the layout_weight attribute can shrink an element too big
+ * to fit on screen.
  */
-public class LinearLayout6 extends Activity {
+public class LinearLayout9 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_layout_6);
+        setContentView(R.layout.linear_layout_9);
+        ListView list = (ListView) findViewById(R.id.list);
+        list.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, AutoComplete1.COUNTRIES));
     }
+
 }

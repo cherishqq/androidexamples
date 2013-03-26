@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view;
+package com.example.android.apis.view.animation;
 
 import android.app.ListActivity;
 import android.os.Bundle;

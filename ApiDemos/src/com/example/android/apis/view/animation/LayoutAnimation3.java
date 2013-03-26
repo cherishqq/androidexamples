@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008 The Android Open Source Project
+ * Copyright (C) 2007 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,24 +14,31 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view;
+package com.example.android.apis.view.animation;
 
-// Need the following import to get access to the app resources, since this
-// class is in a sub-package.
 import com.example.android.apis.R;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 
-
-/**
- * Demonstrates the use of LinearLayout backgrounds to group labels,
- * EditTexts, and buttons,
- */
-public class LinearLayout10 extends Activity {
+public class LayoutAnimation3 extends ListActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_layout_10);
+
+        setContentView(R.layout.layout_animation_3);
+        setListAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, mStrings));
     }
+
+    private String[] mStrings = {
+        "Bordeaux",
+        "Lyon",
+        "Marseille",
+        "Nancy",
+        "Paris",
+        "Toulouse",
+        "Strasbourg"
+    };
 }

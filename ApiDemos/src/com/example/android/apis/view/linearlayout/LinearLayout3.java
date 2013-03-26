@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view;
+package com.example.android.apis.view.linearlayout;
 
 // Need the following import to get access to the app resources, since this
 // class is in a sub-package.
@@ -25,13 +25,13 @@ import android.os.Bundle;
 
 
 /**
- * A simple linear layout that fills the screen vertically, but the children are not padded.
+ * A simple linear layout that fills the screen vertically, and the middle child is padded with extra space.
  */
-public class LinearLayout2 extends Activity {
+public class LinearLayout3 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_layout_2);
+        setContentView(R.layout.linear_layout_3);
     }
 }

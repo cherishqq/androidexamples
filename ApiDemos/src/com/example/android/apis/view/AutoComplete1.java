@@ -41,7 +41,7 @@ public class AutoComplete1 extends Activity {
    
     }
 
-    static final String[] COUNTRIES = new String[] {
+    public static final String[] COUNTRIES = new String[] {
 	"Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra",
 	"Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina",
 	"Armenia", "Aruba", "Australia", "Austria", "Azerbaijan",

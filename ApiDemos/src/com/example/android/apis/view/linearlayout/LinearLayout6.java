@@ -14,31 +14,25 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view;
+package com.example.android.apis.view.linearlayout;
 
+// Need the following import to get access to the app resources, since this
+// class is in a sub-package.
 import com.example.android.apis.R;
 
-import android.app.ListActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 
-public class LayoutAnimation3 extends ListActivity {
+
+/**
+ * Demonstrates using the uniformSize attribute
+ *
+ */
+public class LinearLayout6 extends Activity {
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.layout_animation_3);
-        setListAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, mStrings));
+        setContentView(R.layout.linear_layout_6);
     }
-
-    private String[] mStrings = {
-        "Bordeaux",
-        "Lyon",
-        "Marseille",
-        "Nancy",
-        "Paris",
-        "Toulouse",
-        "Strasbourg"
-    };
 }
