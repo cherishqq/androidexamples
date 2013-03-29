@@ -17,26 +17,20 @@
 package com.example.android.apis.view.linearlayout;
 
 import com.example.android.apis.R;
-import com.example.android.apis.view.autocomplete.AutoComplete1;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ListView;
-import android.widget.ArrayAdapter;
 
 /**
- * Demonstrates how the layout_weight attribute can shrink an element too big
- * to fit on screen.
+ * Baseline alignment includes a {@link android.widget.LinearLayout}
+ * within another {@link android.widget.LinearLayout}.
  */
-public class LinearLayout9 extends Activity {
+public class BaselineNested3 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_layout_9);
-        ListView list = (ListView) findViewById(R.id.list);
-        list.setAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, AutoComplete1.COUNTRIES));
-    }
 
+        setContentView(R.layout.baseline_nested_3);
+    }
 }

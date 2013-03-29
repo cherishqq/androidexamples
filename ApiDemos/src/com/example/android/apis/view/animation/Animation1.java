@@ -14,29 +14,32 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view.linearlayout;
+package com.example.android.apis.view.animation;
 
+// Need the following import to get access to the app resources, since this
+// class is in a sub-package.
 import com.example.android.apis.R;
-import com.example.android.apis.view.autocomplete.AutoComplete1;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ListView;
-import android.widget.ArrayAdapter;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
-/**
- * Demonstrates how the layout_weight attribute can shrink an element too big
- * to fit on screen.
- */
-public class LinearLayout9 extends Activity {
+public class Animation1 extends Activity implements View.OnClickListener {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_layout_9);
-        ListView list = (ListView) findViewById(R.id.list);
-        list.setAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, AutoComplete1.COUNTRIES));
+        setContentView(R.layout.animation_1);
+
+        View loginButton = findViewById(R.id.login);
+        loginButton.setOnClickListener(this);
+    }
+
+    public void onClick(View v) {
+        Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);
+        findViewById(R.id.pw).startAnimation(shake);
     }
 
 }

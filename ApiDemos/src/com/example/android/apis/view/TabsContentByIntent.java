@@ -17,9 +17,12 @@
 package com.example.android.apis.view;
 
 import android.app.TabActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TabHost;
-import android.content.Intent;
+
+import com.example.android.apis.view.listview.List1;
+import com.example.android.apis.view.listview.List8;
 
 /**
  * An example of tab content that launches an activity via {@link android.widget.TabHost.TabSpec#setContent(android.content.Intent)}

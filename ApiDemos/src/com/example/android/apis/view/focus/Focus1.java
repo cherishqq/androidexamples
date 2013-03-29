@@ -14,29 +14,36 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view.linearlayout;
+package com.example.android.apis.view.focus;
 
 import com.example.android.apis.R;
-import com.example.android.apis.view.autocomplete.AutoComplete1;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.webkit.WebView;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
 
+
 /**
- * Demonstrates how the layout_weight attribute can shrink an element too big
- * to fit on screen.
+ * Demonstrates the use of non-focusable views.
  */
-public class LinearLayout9 extends Activity {
+public class Focus1 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_layout_9);
-        ListView list = (ListView) findViewById(R.id.list);
-        list.setAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, AutoComplete1.COUNTRIES));
-    }
+        setContentView(R.layout.focus_1);
 
+        WebView webView = (WebView) findViewById(R.id.rssWebView);
+        webView.loadData(
+                        "<html><body>Can I focus?<br /><a href=\"#\">No I cannot!</a>.</body></html>",
+                        "text/html", "utf-8");
+
+        ListView listView = (ListView) findViewById(R.id.rssListView);
+        listView.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, 
+                new String[] {"Ars Technica", "Slashdot", "GameKult"}));
+    }
 }

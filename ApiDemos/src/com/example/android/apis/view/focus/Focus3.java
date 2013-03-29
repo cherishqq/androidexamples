@@ -14,29 +14,32 @@
  * limitations under the License.
  */
 
-package com.example.android.apis.view.linearlayout;
-
-import com.example.android.apis.R;
-import com.example.android.apis.view.autocomplete.AutoComplete1;
+package com.example.android.apis.view.focus;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ListView;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
+import com.example.android.apis.R;
 
-/**
- * Demonstrates how the layout_weight attribute can shrink an element too big
- * to fit on screen.
- */
-public class LinearLayout9 extends Activity {
+public class Focus3 extends Activity {
+    private Button mTopButton;
+    private Button mBottomButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_layout_9);
-        ListView list = (ListView) findViewById(R.id.list);
-        list.setAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, AutoComplete1.COUNTRIES));
+
+        setContentView(R.layout.focus_3);
+
+        mTopButton = (Button) findViewById(R.id.top);
+        mBottomButton = (Button) findViewById(R.id.bottom);
     }
 
+    public Button getTopButton() {
+        return mTopButton;
+    }
+
+    public Button getBottomButton() {
+        return mBottomButton;
+    }
 }
