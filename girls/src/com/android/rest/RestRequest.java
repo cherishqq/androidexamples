@@ -12,6 +12,7 @@ import org.apache.http.HttpMessage;
 import android.util.Log;
 
 import com.android.common.Constants;
+import com.android.model.RestResult;
 
 public abstract class RestRequest {
 	
@@ -23,6 +24,8 @@ public abstract class RestRequest {
 	private volatile int mResult = RestErrorCodes.UNKNOWN_STATUS_CODE;
 	
 	private String tag = "RestRequest";
+	
+	private RestResult result;
 	
 	
 	public Reader read(Reader response){

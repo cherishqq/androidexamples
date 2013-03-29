@@ -7,6 +7,7 @@ import java.io.Reader;
 import org.apache.http.Header;
 
 import com.android.common.Constants;
+import com.android.model.RestResult;
 
 
 
@@ -22,6 +23,8 @@ public class UserRestRequest extends RestRequest{
 	private String userName;
 	private String password;
 	private String email;
+	
+	private RestResult result;
 
 	public UserRestRequest(HttpMethod method) {
 		super(method);

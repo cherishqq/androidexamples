@@ -180,6 +180,14 @@
 				<category android:name="android.intent.category.derek"/>
             </intent-filter>
         </activity>
+         <activity
+              android:name=".activity.ui.ViewPagerActivity"
+            android:label="@string/ViewPagerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.derek"/>
+            </intent-filter>
+        </activity>
 
         
  <provider

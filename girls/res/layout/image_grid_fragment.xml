@@ -16,20 +16,19 @@
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_height="fill_parent"
         android:orientation="vertical" >
 
         <GridView
             android:id="@+id/gridView"
             style="@style/PhotoGridLayout"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:columnWidth="@dimen/image_thumbnail_size"
             android:horizontalSpacing="@dimen/image_thumbnail_spacing"
             android:numColumns="auto_fit"
@@ -45,7 +44,9 @@
         android:orientation="vertical" >
 
         <Button
+            android:id="@+id/getMoreImage"
             android:layout_width="fill_parent"
+            android:visibility="gone"
             android:layout_height="wrap_content"
             android:text="More" />
     </LinearLayout>

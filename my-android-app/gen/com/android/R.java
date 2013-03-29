@@ -76,6 +76,7 @@ containing a value of this type.
         public static final int localappframe=0x7f0a000e;
         public static final int modify_user=0x7f0a0005;
         public static final int name=0x7f0a0002;
+        public static final int pagetitle=0x7f0a002f;
         public static final int password=0x7f0a0003;
         public static final int progressBar1=0x7f0a000a;
         public static final int rbCompany1=0x7f0a0029;
@@ -95,6 +96,7 @@ containing a value of this type.
         public static final int section_text=0x7f0a0011;
         public static final int show=0x7f0a0001;
         public static final int showUser=0x7f0a0007;
+        public static final int viewpager=0x7f0a002e;
     }
     public static final class layout {
         public static final int contentresolver=0x7f030000;
@@ -116,12 +118,13 @@ containing a value of this type.
         public static final int simplecursoradapter=0x7f030010;
         public static final int updateversion=0x7f030011;
         public static final int usersearch=0x7f030012;
+        public static final int view_pager=0x7f030013;
     }
     public static final class raw {
         public static final int music=0x7f050000;
     }
     public static final class string {
-        public static final int ContentResolverActivity=0x7f08000f;
+        public static final int ContentResolverActivity=0x7f080010;
         public static final int CursorAdapterDemo=0x7f08000c;
         public static final int ListViewHeader=0x7f08000a;
         public static final int PreferencesActivity=0x7f080004;
@@ -130,6 +133,7 @@ containing a value of this type.
         public static final int SearchListViewActivity=0x7f08000e;
         public static final int SharedPreferences=0x7f080003;
         public static final int SimpleCursorAdapter=0x7f08000b;
+        public static final int ViewPagerActivity=0x7f08000f;
         public static final int app_name=0x7f080001;
         public static final int app_updateVersion=0x7f080007;
         public static final int customview=0x7f080009;

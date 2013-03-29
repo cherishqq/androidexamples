@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.json.JSONObject;
 
+import android.os.Parcel;
 import android.util.Log;
 
 import com.android.rest.RestErrorCodes;
@@ -97,6 +98,18 @@ public class RestResult<T extends BasePOJO> extends BasePOJO {
 		 .append("message:").append(message).append(",")
 		 .append("mList:").append(mList.toString());
 		return b.toString();
+	}
+
+	@Override
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void writeToParcel(Parcel dest, int flags) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

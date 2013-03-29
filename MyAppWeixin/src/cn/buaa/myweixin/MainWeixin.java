@@ -124,6 +124,7 @@ public class MainWeixin extends Activity {
 		};
 		
 		mTabPager.setAdapter(mPagerAdapter);
+		mTabPager.setCurrentItem(0);
     }
     /**
 	 * Í·±êµã»÷¼àÌý

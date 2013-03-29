@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 import android.content.ContentValues;
+import android.os.Parcel;
 import android.util.Log;
 
 import com.android.rest.RestVocabulary;
@@ -165,5 +166,7 @@ public class Photo extends BasePOJO{
 		.append("userId:").append(userId);
 		return b.toString();
 	}
+
+
 	 
 }

@@ -16,6 +16,7 @@
     <string name="CursorAdapterDemo">adapter/2: CursorAdapterDemo</string>
     <string name="ResourceCursorAdapterDemo">adapter/3: ResourceCursorAdapterDemo</string>
     <string name="SearchListViewActivity">UI/1: SearchBar</string>
+    <string name="ViewPagerActivity">UI/2: ViewPagerActivity</string>
     <string name="ContentResolverActivity">db/2: ContentResolver</string>
 
 </resources>

@@ -36,6 +36,7 @@ public class ImageGridListActivity  extends Activity {
         mAdapter = new ImageGridListAdapter(this);
         setListAdapter(mAdapter);*/
         
+        
     }
 
     

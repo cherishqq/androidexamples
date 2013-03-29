@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="#eee" >  
-
+ 
     <RelativeLayout
         android:id="@+id/main_bottom"
         android:layout_width="match_parent"
@@ -16,11 +16,15 @@
         android:background="@drawable/bottom_bar"
         >             
       
+        <!-- 
+        android:scaleType="matrix"
+        MATRIX矩阵可以动态缩小放大图片来显示 -->
+        
         <ImageView
         	android:id="@+id/img_tab_now"
         	android:layout_width="wrap_content"
         	android:layout_height="wrap_content"        	     	
-        	android:scaleType="matrix"
+        	android:scaleType="center"
         	android:layout_gravity="bottom"            	
             android:layout_alignParentBottom="true"
         	android:src="@drawable/tab_bg" />              
@@ -118,12 +122,20 @@
         </LinearLayout>     
        
     </RelativeLayout>
+    
+  
     <LinearLayout
         android:layout_width="fill_parent"
     	android:layout_height="wrap_content" 
     	android:layout_alignParentTop="true"
-    	android:layout_above="@id/main_bottom"       
+    	android:layout_above="@id/main_bottom"  
         android:orientation="vertical" >
+        
+        <!-- 
+        只是用于可以滑动的组件
+        
+        
+         -->
         
         <android.support.v4.view.ViewPager
         	android:id="@+id/tabpager"

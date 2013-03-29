@@ -6,26 +6,29 @@
 
     <ListView
         android:id="@android:id/list"
-        android:persistentDrawingCache="animation|scrolling"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
-       
-       <Button
-       android:id="@+id/add"
+        android:persistentDrawingCache="animation|scrolling" />
+
+    <Button
+        android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="add"
-       >
-       </Button>
-       
-      <Button
-       android:id="@+id/show"
-       android:layout_gravity="right"
+        android:text="add" >
+    </Button>
+
+    <Button
+        android:id="@+id/show"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="show"
-       >
-       </Button>
-       
+        android:layout_gravity="right"
+        android:text="show" >
+    </Button>
+
+    <TextView
+        android:layout_width="40dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center"
+        android:text="show" />
+
 </FrameLayout>

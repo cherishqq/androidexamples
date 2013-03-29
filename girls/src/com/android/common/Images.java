@@ -16,6 +16,9 @@
 
 package com.android.common;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.android.utils.ImageWorker.ImageWorkerAdapter;
 
 
@@ -45,20 +48,13 @@ public class Images {
        "http://www.baby611.com/pic/091224/lyf/a0ab1cd6e93f1a2fa08bb749.jpg",
        "http://wenwen.soso.com/p/20090502/20090502170138-704843979.jpg",
        "http://image.new-more.com/2011/0119/201101191230482082.jpg",
-       "http://t1.baidu.com/it/u=28863468,1819625664&fm=52&gp=0.jpg",
-       "http://t2.baidu.com/it/u=1025449785,3600033552&fm=25&gp=0.jpg",
-       "http://t3.baidu.com/it/u=627942650,3024273542&fm=25&gp=0.jpg",
-       "http://t3.baidu.com/it/u=3724291276,413966316&fm=25&gp=0.jpg",
-       "http://t3.baidu.com/it/u=3001333522,2030582827&fm=25&gp=0.jpg",
-       "http://t1.baidu.com/it/u=2360061703,1037028686&fm=25&gp=0.jpg",
-       "http://t1.baidu.com/it/u=3891574805,2533150798&fm=25&gp=0.jpg",
-       "http://t2.baidu.com/it/u=4013293146,797366700&fm=25&gp=0.jpg",
-       "http://t1.baidu.com/it/u=709656255,3651666456&fm=25&gp=0.jpg",
-       "http://t3.baidu.com/it/u=856004311,3480272303&fm=25&gp=0.jpg",
-       "http://t3.baidu.com/it/u=1290362942,2833648812&fm=25&gp=0.jpg",
-       "http://t3.baidu.com/it/u=3810518164,3270405470&fm=25&gp=0.jpg",
-       "http://t1.baidu.com/it/u=998648037,2397926331&fm=25&gp=0.jpg",
-       "http://t2.baidu.com/it/u=3375133805,1634009729&fm=25&gp=0.jpg",
+       "http://pic18.nipic.com/20120105/9218468_165901362169_2.jpg",
+       "http://pic18.nipic.com/20120204/5769559_170424467000_2.jpg",
+       "http://pic15.nipic.com/20110721/6972219_155836390125_2.jpg",
+       "http://www.ishowx.com/uploads/allimg/120220/1-120220160953.jpg",
+       "http://www.ishowx.com/uploads/allimg/111130/1-111130151030.jpg",
+       "http://www.ishowx.com/uploads/allimg/111025/1-111025115138.jpg",
+       "http://www.ishowx.com/uploads/allimg/120401/1-120401233409-50.jpg",
     };
 
     /**
@@ -82,22 +78,40 @@ public class Images {
            "http://www.baby611.com/pic/091224/lyf/a0ab1cd6e93f1a2fa08bb749.jpg",
            "http://wenwen.soso.com/p/20090502/20090502170138-704843979.jpg",
            "http://image.new-more.com/2011/0119/201101191230482082.jpg",
-           "http://t1.baidu.com/it/u=28863468,1819625664&fm=52&gp=0.jpg",
-           "http://t2.baidu.com/it/u=1025449785,3600033552&fm=25&gp=0.jpg",
-           "http://t3.baidu.com/it/u=627942650,3024273542&fm=25&gp=0.jpg",
-           "http://t3.baidu.com/it/u=3724291276,413966316&fm=25&gp=0.jpg",
-           "http://t3.baidu.com/it/u=3001333522,2030582827&fm=25&gp=0.jpg",
-           "http://t1.baidu.com/it/u=2360061703,1037028686&fm=25&gp=0.jpg",
-           "http://t1.baidu.com/it/u=3891574805,2533150798&fm=25&gp=0.jpg",
-           "http://t2.baidu.com/it/u=4013293146,797366700&fm=25&gp=0.jpg",
-           "http://t1.baidu.com/it/u=709656255,3651666456&fm=25&gp=0.jpg",
-           "http://t3.baidu.com/it/u=856004311,3480272303&fm=25&gp=0.jpg",
-           "http://t3.baidu.com/it/u=1290362942,2833648812&fm=25&gp=0.jpg",
-           "http://t3.baidu.com/it/u=3810518164,3270405470&fm=25&gp=0.jpg",
-           "http://t1.baidu.com/it/u=998648037,2397926331&fm=25&gp=0.jpg",
-           "http://t2.baidu.com/it/u=3375133805,1634009729&fm=25&gp=0.jpg",
+           "http://pic18.nipic.com/20120105/9218468_165901362169_2.jpg",
+           "http://pic18.nipic.com/20120204/5769559_170424467000_2.jpg",
+           "http://pic15.nipic.com/20110721/6972219_155836390125_2.jpg",
+           "http://www.ishowx.com/uploads/allimg/120220/1-120220160953.jpg",
+           "http://www.ishowx.com/uploads/allimg/111130/1-111130151030.jpg",
+           "http://www.ishowx.com/uploads/allimg/111025/1-111025115138.jpg",
+           "http://www.ishowx.com/uploads/allimg/120401/1-120401233409-50.jpg",
     };
+    
+    public final static List<String> imageThumbUrlsList = new ArrayList<String>();
 
+    static {
+    	imageThumbUrlsList.add("http://g.hiphotos.baidu.com/baike/pic/item/e850352ac65c1038b5f3803fb2119313b17e89ba.jpg");
+    	imageThumbUrlsList.add("http://www.baidujpw.cn/tu/UploadPic/2012-12/201212208584343587.jpg");
+    	imageThumbUrlsList.add("http://img5.iqilu.com/c/u/2012/1213/1355387049422.jpg");
+    	imageThumbUrlsList.add("http://www.dazhong.tv/uploads/allimg/c121128/135405415TJ30-J400.jpg");
+    	imageThumbUrlsList.add("http://imgsrc.baidu.com/forum/pic/item/8e335c6034a85edfd376c5f649540923dc54756a.jpg");
+    	imageThumbUrlsList.add("http://imgsrc.baidu.com/forum/pic/item/42cd3bc79f3df8dc52f8b444cd11728b4610281b.jpg");
+    	imageThumbUrlsList.add("http://pic.7y7.com/20129/2012092936893913.jpg");
+    	imageThumbUrlsList.add("http://www.mf06.com/e/pic/201008/20100806070238362.jpg");
+    	imageThumbUrlsList.add("http://images.kkkwww.com/2010/05/12/39eef294679060a8c577ca3e0723620f.jpg");
+    	imageThumbUrlsList.add("http://t1.baidu.com/it/u=1667058993,892628457&fm=23&gp=0.jpg");
+    	imageThumbUrlsList.add("http://gb.cri.cn/mmsource/images/2006/09/29/ea060929026.jpg");
+    	imageThumbUrlsList.add("http://pic5.nipic.com/20100126/4264500_160313033361_2.jpg");
+    	imageThumbUrlsList.add("http://www.baby611.com/pic/091224/lyf/a0ab1cd6e93f1a2fa08bb749.jpg");
+    	imageThumbUrlsList.add("http://wenwen.soso.com/p/20090502/20090502170138-704843979.jpg");
+    	imageThumbUrlsList.add("http://image.new-more.com/2011/0119/201101191230482082.jpg");
+    	imageThumbUrlsList.add("http://pic18.nipic.com/20120105/9218468_165901362169_2.jpg");
+    	imageThumbUrlsList.add("http://www.ishowx.com/uploads/allimg/120220/1-120220160953.jpg");
+    	imageThumbUrlsList.add("http://pic15.nipic.com/20110721/6972219_155836390125_2.jpg");
+    	imageThumbUrlsList.add("http://www.ishowx.com/uploads/allimg/111025/1-111025115138.jpg");
+    	imageThumbUrlsList.add("http://www.ishowx.com/uploads/allimg/120401/1-120401233409-50.jpg");
+    }
+    
     /**
      * Simple static adapter to use for images.
      */
@@ -110,6 +124,11 @@ public class Images {
         @Override
         public int getSize() {
             return Images.imageUrls.length;
+            
+        }
+        
+        public void addItem(){
+        	
         }
     };
 
@@ -119,12 +138,16 @@ public class Images {
     public final static ImageWorkerAdapter imageThumbWorkerUrlsAdapter = new ImageWorkerAdapter() {
         @Override
         public Object getItem(int num) {
-            return Images.imageThumbUrls[num];
+            return Images.imageThumbUrlsList.get(num);
         }
 
         @Override
         public int getSize() {
-            return Images.imageThumbUrls.length;
+            return Images.imageThumbUrlsList.size();
+        }
+        
+        public void addItem(){
+        	Images.imageThumbUrlsList.add("http://image.tianjimedia.com/uploadImages/2012/356/12A8V14LG94W.jpg");
         }
     };
 }

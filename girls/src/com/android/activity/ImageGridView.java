@@ -1,16 +1,5 @@
 package com.android.activity;
 
-import java.util.zip.Inflater;
-
-import com.android.R;
-import com.android.common.Images;
-import com.android.log.LogSettings;
-import com.android.utils.ImageCache;
-import com.android.utils.ImageFetcher;
-import com.android.utils.ImageResizer;
-import com.android.utils.Utils;
-import com.android.utils.ImageCache.ImageCacheParams;
-
 import android.content.Context;
 import android.content.Intent;
 import android.util.AttributeSet;
@@ -19,13 +8,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.android.R;
+import com.android.common.Images;
+import com.android.log.LogSettings;
+import com.android.utils.ImageCache;
+import com.android.utils.ImageCache.ImageCacheParams;
+import com.android.utils.ImageFetcher;
+import com.android.utils.ImageResizer;
+import com.android.utils.Utils;
 
 public class ImageGridView extends LinearLayout implements
 		AdapterView.OnItemClickListener {
@@ -40,6 +38,7 @@ public class ImageGridView extends LinearLayout implements
 	private Context mContext;
 	private GridView mGridView;
 	private LayoutInflater inflater;
+	private Button getMoreImageButton;
 	
 	
 	
@@ -69,7 +68,10 @@ public class ImageGridView extends LinearLayout implements
 		inflater = (LayoutInflater) context
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View v = inflater.inflate(R.layout.image_grid_fragment,this,true);
-		 mGridView = (GridView) v.findViewById(R.id.gridView);
+		mGridView = (GridView) v.findViewById(R.id.gridView);
+		getMoreImageButton = (Button)v.findViewById(R.id.getMoreImage);
+		
+
 		
 /*		 addView(mGridView, new LinearLayout.LayoutParams(
                    LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));*/
@@ -98,6 +100,8 @@ public class ImageGridView extends LinearLayout implements
 		mAdapter = new ImageAdapter(mContext);
 		mGridView.setAdapter(mAdapter);
 		mGridView.setOnItemClickListener(this);
+		
+
 
 		// This listener is used to get the final width of the GridView and then
 		// calculate the
@@ -129,6 +133,17 @@ public class ImageGridView extends LinearLayout implements
 					}
 				});
 
+		
+		getMoreImageButton.setOnClickListener(new OnClickListener() {			
+			@Override
+			public void onClick(View v) {
+				// todo
+				
+				
+				
+			}
+		});
+		
 		mImageThumbSize = getResources().getDimensionPixelSize(
 				R.dimen.image_thumbnail_size);
 		mImageThumbSpacing = getResources().getDimensionPixelSize(
@@ -155,7 +170,11 @@ public class ImageGridView extends LinearLayout implements
 		private int mNumColumns = 0;
 		private int mActionBarHeight = -1;
 		private GridView.LayoutParams mImageViewLayoutParams;
+		 
 
+		
+		
+		
 		public ImageAdapter(Context context) {
 			super();
 			mContext = context;
