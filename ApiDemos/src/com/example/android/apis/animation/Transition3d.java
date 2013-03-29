@@ -29,6 +29,12 @@ public class Transition3d extends Activity implements
     private ListView mPhotosList;
     private ViewGroup mContainer;
     private ImageView mImageView;
+    
+    @Override
+    public CharSequence onCreateDescription() {
+    	return super.onCreateDescription();
+    }
+    
 
     // Names of the photos we show in the list
     private static final String[] PHOTOS_NAMES = new String[] {

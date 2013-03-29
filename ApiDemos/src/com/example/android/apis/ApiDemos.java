@@ -16,16 +16,6 @@
 
 package com.example.android.apis;
 
-import android.app.ListActivity;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
-
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,7 +24,22 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import android.app.ListActivity;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.Toast;
+
 public class ApiDemos extends ListActivity {
+	
+	private Toast mToast;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,10 +53,26 @@ public class ApiDemos extends ListActivity {
             path = "";
         }
 
+        mToast = new Toast(this);
         setListAdapter(new SimpleAdapter(this, getData(path),
                 android.R.layout.simple_list_item_1, new String[] { "title" },
                 new int[] { android.R.id.text1 }));
         getListView().setTextFilterEnabled(true);
+        
+        
+        
+        getListView().setOnItemLongClickListener(new OnItemLongClickListener() {
+
+			@Override
+			public boolean onItemLongClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				
+				Map map = (Map)parent.getItemAtPosition(position);
+				String title = (String)map.get("title");
+				mToast.makeText(getApplication(), title, Toast.LENGTH_LONG).show();
+				return true;
+			}
+		});
     }
 
     protected List getData(String prefix) {
@@ -84,6 +105,8 @@ public class ApiDemos extends ListActivity {
             String label = labelSeq != null
                     ? labelSeq.toString()
                     : info.activityInfo.name;
+                    
+            
             
             if (prefix.length() == 0 || label.startsWith(prefix)) {
                 
@@ -130,12 +153,13 @@ public class ApiDemos extends ListActivity {
         return result;
     }
 
-    protected void addItem(List<Map> data, String name, Intent intent) {
+    protected void addItem(List<Map> data, String name , Intent intent) {
         Map<String, Object> temp = new HashMap<String, Object>();
         temp.put("title", name);
         temp.put("intent", intent);
         data.add(temp);
     }
+    
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {

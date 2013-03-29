@@ -1899,7 +1899,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".text.LogTextBox1" android:label="Text/LogTextBox">
+        <activity android:name=".text.LogTextBox1" android:label="Text/LogTextBox" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+                
+            </intent-filter>
+        </activity>
+        
+         <activity android:name=".activity.PullToRefreshActivity" android:label="Views/Lists/15.PullToRefreshActivity" android:description="@string/activity_alarm_controller" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
