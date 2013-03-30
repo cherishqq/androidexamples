@@ -67,9 +67,11 @@
             </intent-filter>
         </activity>
 
+        
+        <!--  android:theme="@android:style/Theme.Panel" -->
         <activity android:name=".app.DialogActivity"
                 android:label="@string/activity_dialog"
-                android:theme="@android:style/Theme.Panel">
+                >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -721,6 +723,13 @@
         </activity>
 
         <activity android:name=".view.framelayout.FrameLayout1"  android:label="Views/Layouts/FrameLayout1/1. FrameLayout">           
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".view.framelayout.FrameLayout3"  android:label="Views/Layouts/FrameLayout1/3. FrameLayout">           
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
