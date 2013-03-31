@@ -161,13 +161,20 @@ public class PullToRefreshListView extends ListView implements OnScrollListener 
         }
     }
 
+    /**
+     * 特殊处理，当header完全显示后，下拉只按下拉1/3的距离下拉，给用户一种艰难下拉，该松手的弹簧感觉
+     */
+    
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         final int y = (int) event.getY();
         mBounceHack = false;
+        
+        String action = "";
 
         switch (event.getAction()) {
             case MotionEvent.ACTION_UP:
+            	action = "ACTION_UP";
                 if (!isVerticalScrollBarEnabled()) {
                     setVerticalScrollBarEnabled(true);
                 }
@@ -188,12 +195,52 @@ public class PullToRefreshListView extends ListView implements OnScrollListener 
                 }
                 break;
             case MotionEvent.ACTION_DOWN:
+            	action = "ACTION_DOWN"; 
+            	// 记下位置改变
                 mLastMotionY = y;
                 break;
             case MotionEvent.ACTION_MOVE:
+            	action = "ACTION_MOVE"; 
                 applyHeaderPadding(event);
                 break;
         }
+        
+        /*if (mCurrentScrollState == SCROLL_STATE_TOUCH_SCROLL
+                && mRefreshState != REFRESHING) {
+            if (getFirstVisiblePosition() == 0) {
+                mRefreshViewImage.setVisibility(View.VISIBLE);
+                if ((mRefreshView.getBottom() >= mRefreshViewHeight + 20
+                        || mRefreshView.getTop() >= 0)
+                        && mRefreshState != RELEASE_TO_REFRESH) {
+                    mRefreshViewText.setText(R.string.pull_to_refresh_release_label);
+                    mRefreshViewImage.clearAnimation();
+                    mRefreshViewImage.startAnimation(mFlipAnimation);
+                    mRefreshState = RELEASE_TO_REFRESH;
+                } else if (mRefreshView.getBottom() < mRefreshViewHeight + 20
+                        && mRefreshState != PULL_TO_REFRESH) {
+                    mRefreshViewText.setText(R.string.pull_to_refresh_pull_label);
+                    if (mRefreshState != TAP_TO_REFRESH) {
+                        mRefreshViewImage.clearAnimation();
+                        mRefreshViewImage.startAnimation(mReverseFlipAnimation);
+                    }
+                    mRefreshState = PULL_TO_REFRESH;
+                }
+            } else {
+                mRefreshViewImage.setVisibility(View.GONE);
+                resetHeader();
+            }
+        } else if (mCurrentScrollState == SCROLL_STATE_FLING
+                && getFirstVisiblePosition() == 0
+                && mRefreshState != REFRESHING) {
+            setSelection(1);
+            mBounceHack = true;
+        } else if (mBounceHack && mCurrentScrollState == SCROLL_STATE_FLING) {
+            setSelection(1);
+        }*/
+
+        
+        Log.e(TAG, "onTouchEvent:" + action);
+        
         return super.onTouchEvent(event);
     }
 
@@ -224,7 +271,7 @@ public class PullToRefreshListView extends ListView implements OnScrollListener 
     }
 
     /**
-     * Sets the header padding back to original size.
+     * Sets the header padding back to original size. 反弹效果
      */
     private void resetHeaderPadding() {
         mRefreshView.setPadding(
@@ -278,12 +325,15 @@ public class PullToRefreshListView extends ListView implements OnScrollListener 
     @Override
     public void onScroll(AbsListView view, int firstVisibleItem,
             int visibleItemCount, int totalItemCount) {
+    	Log.e(TAG, "onScroll");
         // When the refresh view is completely visible, change the text to say
         // "Release to refresh..." and flip the arrow drawable.
         if (mCurrentScrollState == SCROLL_STATE_TOUCH_SCROLL
                 && mRefreshState != REFRESHING) {
             if (firstVisibleItem == 0) {
                 mRefreshViewImage.setVisibility(View.VISIBLE);
+                
+                // 下拉达到界限，进入松手刷新状态
                 if ((mRefreshView.getBottom() >= mRefreshViewHeight + 20
                         || mRefreshView.getTop() >= 0)
                         && mRefreshState != RELEASE_TO_REFRESH) {
@@ -291,7 +341,10 @@ public class PullToRefreshListView extends ListView implements OnScrollListener 
                     mRefreshViewImage.clearAnimation();
                     mRefreshViewImage.startAnimation(mFlipAnimation);
                     mRefreshState = RELEASE_TO_REFRESH;
-                } else if (mRefreshView.getBottom() < mRefreshViewHeight + 20
+                    
+                } 
+                	// 进入下拉刷新状态
+                else if (mRefreshView.getBottom() < mRefreshViewHeight + 20
                         && mRefreshState != PULL_TO_REFRESH) {
                     mRefreshViewText.setText(R.string.pull_to_refresh_pull_label);
                     if (mRefreshState != TAP_TO_REFRESH) {
@@ -304,7 +357,11 @@ public class PullToRefreshListView extends ListView implements OnScrollListener 
                 mRefreshViewImage.setVisibility(View.GONE);
                 resetHeader();
             }
-        } else if (mCurrentScrollState == SCROLL_STATE_FLING
+        } 
+        
+        // 飞滑状态..不能显示出 header..也不能影响 正常的 飞滑。。 只有在正常情况下才纠正位置
+        
+        else if (mCurrentScrollState == SCROLL_STATE_FLING
                 && firstVisibleItem == 0
                 && mRefreshState != REFRESHING) {
             setSelection(1);
