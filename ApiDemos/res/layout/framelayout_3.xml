@@ -1,5 +1,4 @@
-<!--
- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
@@ -20,10 +19,12 @@
         android:textColor="#ffffffff" />
 
 </FrameLayout>
--->
+
 
 <!--  user merge tag, can reduce the framelayout -->
-<merge xmlns:android="http://schemas.android.com/apk/res/adndroid" >
+<!-- <merge xmlns:android="http://schemas.android.com/apk/res/adndroid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
 
     <ImageView
         android:layout_width="fill_parent"
@@ -41,4 +42,4 @@
         android:text="Golden Gate2"
         android:textColor="#ffffffff" />
 
-</merge>
+</merge> -->

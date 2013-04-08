@@ -1922,6 +1922,110 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        
+             <!-- Fragment Samples -->
+
+        <activity android:name=".view.fragment.FragmentAlertDialog"
+                android:label="Views/fragment/FragmentAlertDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentHideShow"
+                android:label="Views/fragment/FragmentHideShow"
+                android:windowSoftInputMode="stateUnchanged"
+               >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentContextMenu"
+                android:label="Views/fragment/FragmentContextMenu"
+                >
+            <intent-filter>
+                         <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentDialog"
+                android:label="Views/fragment/FragmentDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentDialogOrActivity"
+                android:label="Views/fragment/FragmentDialogOrActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentLayout"
+                android:label="Views/fragment/FragmentLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentLayout$DetailsActivity"/>
+
+        <activity android:name=".view.fragment.FragmentListCursorLoader"
+                android:label="Views/fragment/FragmentListCursorLoader">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentListArray"
+                android:label="Views/fragment/FragmentListArray">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentMenu"
+                android:label="Views/fragment/FragmentMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentRetainInstance"
+                android:label="Views/fragment/FragmentRetainInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentReceiveResult"
+                android:label="Views/fragment/FragmentReceiveResult">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.fragment.FragmentStack"
+                android:label="Views/fragment/FragmentStack">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity> -->
+         
 
     </application>
 
