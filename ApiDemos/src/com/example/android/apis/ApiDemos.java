@@ -29,10 +29,11 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -40,6 +41,8 @@ import android.widget.Toast;
 public class ApiDemos extends ListActivity {
 	
 	private Toast mToast;
+	
+	private int MENU_ITEM_SHOW = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,9 +62,10 @@ public class ApiDemos extends ListActivity {
                 new int[] { android.R.id.text1 }));
         getListView().setTextFilterEnabled(true);
         
+        registerForContextMenu(getListView());
         
-        
-        getListView().setOnItemLongClickListener(new OnItemLongClickListener() {
+       
+/*        getListView().setOnItemLongClickListener(new OnItemLongClickListener() {
 
 			@Override
 			public boolean onItemLongClick(AdapterView<?> parent, View view,
@@ -72,7 +76,7 @@ public class ApiDemos extends ListActivity {
 				mToast.makeText(getApplication(), title, Toast.LENGTH_LONG).show();
 				return true;
 			}
-		});
+		});*/
     }
 
     protected List getData(String prefix) {
@@ -167,6 +171,21 @@ public class ApiDemos extends ListActivity {
 
         Intent intent = (Intent) map.get("intent");
         startActivity(intent);
+    }
+    
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v,
+    		ContextMenuInfo menuInfo) {
+    	
+    	AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
+    	menu.add("description");
+    	menu.add(0, MENU_ITEM_SHOW , 0, "ΩÈ…‹");
+    	super.onCreateContextMenu(menu, v, menuInfo);
+    }
+    
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+    	return super.onContextItemSelected(item);
     }
 
 }
