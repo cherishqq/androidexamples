@@ -23,7 +23,7 @@
 -->
 
 <!--  user merge tag, can reduce the framelayout -->
-<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+<merge xmlns:android="http://schemas.android.com/apk/res/adndroid" >
 
     <ImageView
         android:layout_width="fill_parent"
