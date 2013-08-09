@@ -3,7 +3,7 @@ package com.android.model;
 import java.io.IOException;
 import java.util.List;
 
-import com.google.agson.stream.JsonReader;
+import com.google.gson.stream.JsonReader;
 
 public class ListBasePOJO<T extends BasePOJO>  extends BasePOJO{
 

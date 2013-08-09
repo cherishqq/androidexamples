@@ -11,8 +11,8 @@ import android.util.Log;
 
 import com.android.rest.RestErrorCodes;
 import com.android.rest.RestVocabulary;
-import com.google.agson.JsonObject;
-import com.google.agson.stream.JsonReader;
+import com.google.gson.JsonObject;
+import com.google.gson.stream.JsonReader;
 
 public class RestResult<T extends BasePOJO> extends BasePOJO {
 	

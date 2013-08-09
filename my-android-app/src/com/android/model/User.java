@@ -3,7 +3,7 @@ package com.android.model;
 import java.io.IOException;
 
 import com.android.common.Constants.Gender;
-import com.google.agson.stream.JsonReader;
+import com.google.gson.stream.JsonReader;
 
 public class User extends BasePOJO<User>{
 	

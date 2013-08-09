@@ -6,7 +6,7 @@ import java.util.List;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.google.agson.stream.JsonReader;
+import com.google.gson.stream.JsonReader;
 
 public abstract class BasePOJO <T extends BasePOJO> implements Parcelable{
 	
